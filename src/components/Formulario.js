@@ -9,6 +9,9 @@ const Formulario = () => {
         recorrido: 0
     });
 
+    // State para errores
+    const [error, actualizarError] = useState(false);
+
     // Función a ejecutarse cada que el usuario escribe en el input
     const actualizarState = (e) => {
         // Leyendo y pasando los valores capturados del usuario al state
@@ -18,17 +21,44 @@ const Formulario = () => {
         })
     }
 
-    // Extraer los valores con destructuring
+    // Extraer los valores con destructuring al state
     const { nombre, correo, recorrido } = resultado;
+
+    // Funcion de envío de formulario
+    const submitDatos = (e) => {
+
+        e.preventDefault();
+
+        // Validar Formulario
+        if (nombre.trim() === '' || correo.trim() === '' || recorrido <= 0) {
+
+            actualizarError(true);
+
+            return;
+        }
+
+        // Asignando ID
+
+
+        // Generar los datos
+
+
+        //Resetear el formulario 
+
+    }
 
     // Información a mostrar en la interfaz
     return (
 
         <Fragment>
 
-            <h1>Datos Semanales</h1>
+            <h1>Ingresa Tus Datos</h1>
 
-            <form>
+            {error ? <p className="alert-error">Datos Inválidos o Campo Vacío</p> : null}
+
+            <form
+                onSubmit={submitDatos}
+            >
                 <label>Nombre: </label>
                 <input
                     type="text"

@@ -25,3 +25,13 @@ h2 {
 label {
   color: white;
 }
+
+.alert-error {
+  background-color: #B71C1C;
+  color: #FFEBEE;
+  padding: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+}

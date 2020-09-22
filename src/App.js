@@ -6,7 +6,7 @@ function App() {
 
     <Fragment>
 
-      <h1>Revisa Tus Resultados</h1>
+      <h1>Revisa Tu Resultado Semanal</h1>
 
       <div className="container">
 
