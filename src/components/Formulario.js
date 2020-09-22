@@ -1,6 +1,8 @@
 import React, { Fragment, useState } from 'react';
 
-const Formulario = () => {
+import { v4 as uuidv4 } from 'uuid';
+
+const Formulario = ({ crearResultado }) => {
 
     // State de resultados
     const [resultado, actualizarResultado] = useState({
@@ -36,14 +38,22 @@ const Formulario = () => {
 
             return;
         }
+        // Si todo es correcto remueve el mensaje de error
+        actualizarError(false);
 
-        // Asignando ID
-
+        // Asignando ID único con la libreria uuid
+        resultado.id = uuidv4();
+        // console.log(resultado);
 
         // Generar los datos
+        crearResultado(resultado)
 
-
-        //Resetear el formulario 
+        //Limpiar el formulario después de la captura
+        actualizarResultado({
+            nombre: '',
+            correo: '',
+            recorrido: 0
+        });
 
     }
 
@@ -70,7 +80,7 @@ const Formulario = () => {
                 />
                 <label>Correo: </label>
                 <input
-                    type="text"
+                    type="email"
                     className="u-full-width"
                     name="correo"
                     placeholder="ejemplo@ejemplo.com"
