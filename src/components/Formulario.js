@@ -62,7 +62,7 @@ const Formulario = ({ crearResultado }) => {
 
         <Fragment>
 
-            <h1>Ingresa Tus Datos</h1>
+            <h2>Ingresa Tus Datos</h2>
 
             {error ? <p className="alert-error">Datos Inválidos o Campo Vacío</p> : null}
 

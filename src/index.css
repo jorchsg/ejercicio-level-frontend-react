@@ -35,3 +35,30 @@ label {
   text-align: center;
   font-family: 'Staatliches', cursive;
 }
+
+.resultado {
+  padding: 2rem;
+  background: white;
+  border-bottom: 1px solid #e1e1e1;
+  color: black;
+}
+
+.resultado p {
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+
+.resultado p span {
+  font-weight: normal;
+
+}
+
+.resultado:first-of-type {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.resultado:last-of-type {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}

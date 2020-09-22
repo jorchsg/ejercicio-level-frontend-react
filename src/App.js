@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import Formulario from './components/Formulario';
+import Resultado from './components/Resultado';
 
 function App() {
 
@@ -31,10 +32,14 @@ function App() {
             />
           </div>
 
-          <div className="one half-column">
-
-
-
+          <div className="one-half column">
+            <h2>Tus Resultados</h2>
+            {resultados.map(resultado => (
+              <Resultado
+                key={resultado.id}
+                resultado={resultado}
+              />
+            ))}
           </div>
 
         </div>
