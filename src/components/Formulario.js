@@ -102,7 +102,7 @@ const Formulario = ({ crearResultado }) => {
                 <button
                     type="submit"
                     className="u-full-width button-primary"
-                >Confirmar Datos</button>
+                >Aregar Registro</button>
 
             </form>
 

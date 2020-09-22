@@ -16,6 +16,16 @@ function App() {
     ]);
   }
 
+  // Función para eliminar resultado acorde con su ID
+  const eliminarRegistro = (id) => {
+    const nuevosResultados = resultados.filter(resultado => resultado.id !== id);
+    guardarResultados(nuevosResultados);
+  }
+
+  // Mostrar titulo en resultados dependiendo el state
+  const titulo = resultados.length === 0 ? 'Sin Registros' : 'Tus Resultados';
+
+
   return (
 
     <Fragment>
@@ -33,11 +43,12 @@ function App() {
           </div>
 
           <div className="one-half column">
-            <h2>Tus Resultados</h2>
+            <h2>{titulo}</h2>
             {resultados.map(resultado => (
               <Resultado
                 key={resultado.id}
                 resultado={resultado}
+                eliminarRegistro={eliminarRegistro}
               />
             ))}
           </div>
