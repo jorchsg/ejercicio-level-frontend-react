@@ -27,8 +27,21 @@ label {
 }
 
 .alert-error {
-  background-color: #B71C1C;
-  color: #FFEBEE;
+  background-color: #F2D7D5;
+  border-left-color: #C0392B;
+  color: #C0392B;
+  padding: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+}
+
+.alert-success {
+
+  background-color: #D5F5E3;
+  border-left-color: #2ECC71;
+  color: #2ECC71;
   padding: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
@@ -39,8 +52,8 @@ label {
 .resultado {
   padding: 2rem;
   background: white;
-  border-bottom: 1px solid #e1e1e1;
   color: black;
+  margin-bottom: 2rem;
 }
 
 .resultado p {
@@ -50,7 +63,6 @@ label {
 
 .resultado p span {
   font-weight: normal;
-
 }
 
 .resultado:first-of-type {
@@ -65,7 +77,7 @@ label {
 
 .button.eliminar,
 .button.eliminar:hover {
-  background-color: #c10059;
+  background-color: #d9534f;
   color: white;
   margin-top: 2rem;
 }

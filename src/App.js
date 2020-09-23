@@ -2,6 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react';
 import Formulario from './components/Formulario';
 import Resultado from './components/Resultado';
 
+
 function App() {
 
   // Almacenando Resultados en local Storage
@@ -62,6 +63,7 @@ function App() {
 
           <div className="one-half column">
             <h2>{titulo}</h2>
+
             {resultados.map(resultado => (
               <Resultado
                 key={resultado.id}
@@ -69,6 +71,7 @@ function App() {
                 eliminarRegistro={eliminarRegistro}
               />
             ))}
+
           </div>
 
         </div>
