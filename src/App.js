@@ -1,11 +1,29 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import Formulario from './components/Formulario';
 import Resultado from './components/Resultado';
 
 function App() {
 
+  // Almacenando Resultados en local Storage
+  let resultadosIniciales = JSON.parse(localStorage.getItem('resultados'));
+  if (!resultadosIniciales) {
+    resultadosIniciales = [];
+  }
+
   // Arreglo de Datos
-  const [resultados, guardarResultados] = useState([]);
+  const [resultados, guardarResultados] = useState(resultadosIniciales);
+
+  // Ejecutar use effect cuando cambie los Resultados
+  useEffect(() => {
+    // Si hay resultados almacena en local storage si no manda un objeto vacío
+    if (resultadosIniciales) {
+      localStorage.setItem('resultados', JSON.stringify(resultados));
+    } else {
+      localStorage.setItem('resultados', JSON.stringify([]));
+    }
+
+  }, [resultados])
+
 
   // Función para leer resultados actuales y permita agregar nuevos
   const crearResultado = (resultado) => {
