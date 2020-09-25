@@ -1,8 +1,26 @@
-# Ejercicios de perfilamiento:
+# Ejercicio Front End:
 
-- [Backend](https://github.com/hackademymx/frontend-level/blob/master/README-backend.md)
-  - Resuelvelos con python o nodejs dependiendo de la tecnología que prefieras, los 8 mejores serán los que ocupen los lugares de backend: 4 python y 4 Nodejs
-- [Frontend](https://github.com/hackademymx/frontend-level/blob/master/README-frontend.md)
-  - Resuelvelos con Angular o ReactJS dependiendo de la tecnología que prefieras, los 8 mejores serán los que ocupen los lugares de backend: 4 reactjs y 4 angular
-- [Móvil](https://github.com/hackademymx/frontend-level/blob/master/README-movil.md)
-  - Resuelvelos usando React Native, los 4 mejores serán los que ocupen los 4 lugares disponibles.
+- Desarrollar una pantalla donde el usuario introduzca los siguientes datos: Nombre, Correo y cuantos kilometros caminas a la semana.
+- Si la persona camina más de 4 kilometros a la semana se deben de mostar sus datos en la pantalla con un mensaje de "Felicidades" y si camina menos de 4 kilometros a la semana le debe de regresar un mensaje "Debes de caminar más"
+
+# ERealizado Por:
+
+- Jorge Sandoval
+
+# Tecnología:
+
+- ReactJS
+
+# Herramientas Utilizadas
+
+- Skeleton para estilos y maquetación.
+- Familia de fuentes de google.
+- Normalize para adaptar y formatear correctamente los estilos.
+- CSS Local
+
+# Dependencias
+
+- uuid: Dependendencia para generar un id único y almacenarlo en local storage
+  Instalación: npm install uuid
+
+# Enlace para el demo del ejercicio solicitado

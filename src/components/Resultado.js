@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react';
+// Importando PropTypes para Documentar
+import PropTypes from 'prop-types';
 
 const Resultado = ({ resultado, eliminarRegistro }) => {
 
@@ -27,6 +29,12 @@ const Resultado = ({ resultado, eliminarRegistro }) => {
             }
         </Fragment>
     )
+}
+
+// Documentación
+Resultado.propTypes = {
+    resultado: PropTypes.object.isRequired,
+    eliminarRegistro: PropTypes.func.isRequired
 }
 
 export default Resultado;

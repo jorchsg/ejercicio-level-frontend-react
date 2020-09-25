@@ -1,6 +1,8 @@
 import React, { Fragment, useState } from 'react';
-
+// Importando libreria para la generación de ID 
 import { v4 as uuidv4 } from 'uuid';
+// Importando PropTypes para Documentar
+import PropTypes from 'prop-types';
 
 const Formulario = ({ crearResultado }) => {
 
@@ -108,6 +110,11 @@ const Formulario = ({ crearResultado }) => {
 
         </Fragment>
     );
+}
+
+// Documentación
+Formulario.propTypes = {
+    crearResultado: PropTypes.func.isRequired
 }
 
 export default Formulario;
