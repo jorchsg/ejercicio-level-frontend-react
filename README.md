@@ -17,6 +17,8 @@
 - Familia de fuentes de google.
 - Normalize para adaptar y formatear correctamente los estilos.
 - CSS Local
+- Responsive Design
+- Local Storage
 
 # Dependencias
 
@@ -24,3 +26,5 @@
   Instalación: npm install uuid
 
 # Enlace para el demo del ejercicio solicitado
+
+https://ejercicio-level-frontend-react.netlify.app/
