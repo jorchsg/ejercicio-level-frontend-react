@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #20bf55;
   background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
   min-height: 100%;
@@ -18,7 +18,7 @@ h2 {
   padding: 3rem 0;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Staatliches', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
   letter-spacing: 1px;
 }
 
@@ -34,7 +34,7 @@ label {
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Staatliches', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .alert-success {
@@ -46,7 +46,7 @@ label {
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Staatliches', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .resultado {
@@ -54,6 +54,7 @@ label {
   background: white;
   color: black;
   margin-bottom: 2rem;
+  border-radius: 1rem;
 }
 
 .resultado p {
@@ -63,16 +64,6 @@ label {
 
 .resultado p span {
   font-weight: normal;
-}
-
-.resultado:first-of-type {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-
-.resultado:last-of-type {
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
 }
 
 .button.eliminar,
